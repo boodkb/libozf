@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libozf
+Description: Ozi Explorer Image file format (OZF) library
+Version: @VERSION@
+Cflags: -I${includedir}/ozf
+Libs: -L${libdir} -lozf
